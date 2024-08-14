@@ -1,0 +1,118 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "HlpManagerRouter",
+  "sourceName": "contracts/core/HlpManagerRouter.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_weth",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_hlpManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_minUsdg",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_minGlp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "addLiquidityETH",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "hlpManager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_glpAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_minOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "removeLiquidityETH",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "weth",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

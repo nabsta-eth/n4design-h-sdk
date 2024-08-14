@@ -1,0 +1,80 @@
+name: Publish npmjs package and gh pages docs
+on:
+  release:
+    types: [created]
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+      - name: Run unit tests
+        run: |
+          export ARBITRUM_URL=${{ secrets.ARBITRUM_URL }}
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
+          yarn
+          yarn generate-contract-types-nocopy
+          yarn test
+  publish-npm-cjs:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+      - name: Build (cjs)
+        run: |
+          export ARBITRUM_URL=${{ secrets.ARBITRUM_URL }}
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
+          yarn
+          yarn generate-contract-types-nocopy
+          yarn manual-prepublish
+          yarn build-cjs
+      - name: Publish to NPM
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  publish-npm-esm:
+    runs-on: ubuntu-latest
+    needs: publish-npm-cjs
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+      - name: Build (esm)
+        run: |
+          export ARBITRUM_URL=${{ secrets.ARBITRUM_URL }}
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
+          yarn
+          yarn generate-contract-types-nocopy
+          yarn manual-prepublish
+          yarn build
+      - name: Publish to NPM
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  publish-docs:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate ./docs
+        run: |
+          export ARBITRUM_URL=${{ secrets.ARBITRUM_URL }}
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
+          yarn
+          yarn generate-contract-types-nocopy
+          npx typedoc src/index.ts
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          cname: sdk.handle.fi

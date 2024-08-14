@@ -1,0 +1,22 @@
+{
+  "name": "Miscellaneous Tokens",
+  "timestamp": "2022-05-18T01:09:39+0000",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "chainId": 1,
+      "name": "WrappedEther",
+      "symbol": "WETH",
+      "decimals": 18,
+      "logoURI": "https://web.archive.org/web/20220616104035/https://tokens.1inch.io/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png",
+      "extensions": {
+        "isWrappedNative": true
+      }
+    }
+  ]
+}

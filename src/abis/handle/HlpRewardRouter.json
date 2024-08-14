@@ -1,0 +1,391 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "HlpRewardRouter",
+  "sourceName": "contracts/rewards/HlpRewardRouter.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "weth_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "hlp_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "hlpManager_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "referral_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "rewardPool_",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "rewardPoolAlias_",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "StakeHlp",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "UnstakeHlp",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minUsdhlp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minHlp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "referral",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "addStakedLiquidity",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "minUsdhlp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minHlp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "referral",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "addStakedLiquidityEth",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "hlp",
+      "outputs": [
+        {
+          "internalType": "contract ERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "hlpManager",
+      "outputs": [
+        {
+          "internalType": "contract IHlpManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "referral",
+      "outputs": [
+        {
+          "internalType": "contract IReferral",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenOut",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "hlpAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "removeStakedLiquidity",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "hlpAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "removeStakedLiquidityEth",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rewardPool",
+      "outputs": [
+        {
+          "internalType": "contract IRewardPool",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rewardPoolAlias",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "weth",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

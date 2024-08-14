@@ -1,0 +1,353 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "RouterHpsmHlpCurveV2",
+  "sourceName": "contracts/RouterHpsmHlpCurveV2.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_hpsm",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_routerHpsmHlp",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_hlpRouter",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newHlpRouter",
+          "type": "address"
+        }
+      ],
+      "name": "ChangeHlpRouter",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newPsm",
+          "type": "address"
+        }
+      ],
+      "name": "ChangeHpsm",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "routerHpsmHlp",
+          "type": "address"
+        }
+      ],
+      "name": "ChangeRouterHpsmHlp",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "hlpRouter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "hpsm",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "routerHpsmHlp",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_hlpRouter",
+          "type": "address"
+        }
+      ],
+      "name": "setHlpRouter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_hpsm",
+          "type": "address"
+        }
+      ],
+      "name": "setHpsm",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_routerHpsmHlp",
+          "type": "address"
+        }
+      ],
+      "name": "setRouterHpsmHlp",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "hlpCurveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenOut",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "metapoolFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "swapEthToCurveToken",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "hlpToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "hlpCurveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenOut",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "metapoolFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "swapHlpTokenToCurveToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "peggedToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "fxToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "hlpToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenOut",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "metapoolFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signedQuoteData",
+          "type": "bytes"
+        }
+      ],
+      "name": "swapPeggedTokenToCurveToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

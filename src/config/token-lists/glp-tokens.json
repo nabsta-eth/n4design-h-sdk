@@ -1,0 +1,77 @@
+{
+  "name": "glp token list",
+  "timestamp": "2023-01-10T00:00:00+0000",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 42161,
+      "name": "Wrapped Ethereum",
+      "symbol": "WETH",
+      "decimals": 18,
+      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "logoURI": "https://assets.coingecko.com/coins/images/2518/thumb/weth.png?1628852295",
+      "extensions": {
+        "isWrappedNative": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "name": "Bitcoin (WBTC)",
+      "symbol": "BTC",
+      "decimals": 8,
+      "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "logoURI": "https://assets.coingecko.com/coins/images/7598/thumb/wrapped_bitcoin_wbtc.png?1548822744",
+      "extensions": {
+        "isShortable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "name": "Bridged USDC",
+      "symbol": "USDC.e",
+      "decimals": 6,
+      "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "logoURI": "https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389",
+      "extensions": {
+        "isStable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "name": "Tether",
+      "symbol": "USDT",
+      "decimals": 6,
+      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "logoURI": "https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707",
+      "extensions": {
+        "isStable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "name": "Dai",
+      "symbol": "DAI",
+      "decimals": 18,
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "logoURI": "https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734",
+      "extensions": {
+        "isStable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "name": "Frax",
+      "symbol": "FRAX",
+      "decimals": 18,
+      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      "logoURI": "https://assets.coingecko.com/coins/images/13422/small/frax_logo.png?1608476506",
+      "extensions": {
+        "isStable": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": ["es2020", "esnext"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "./dist/**/*"]
+}

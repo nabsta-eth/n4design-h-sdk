@@ -1,0 +1,47 @@
+{
+  "curve": [
+    {
+      "name": "fxUSD-FRAX-USDC",
+      "factory": "0xb17b674D9c5CB2e441F8e196a2f048A81355d031",
+      "address": "0xab174ffa530c888649c44c4d21c849bbaabc723f",
+      "tokens": ["0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F"],
+      "underlying": [
+        "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+        "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+      ],
+      "fee": 4000000
+    },
+    {
+      "name": "fxEUR-EURS",
+      "factory": "0xb17b674D9c5CB2e441F8e196a2f048A81355d031",
+      "address": "0xb0D2EB3C2cA3c6916FAb8DCbf9d9c165649231AE",
+      "tokens": [
+        "0x116172B2482c5dC3E6f445C16Ac13367aC3FCd35",
+        "0xD22a58f79e9481D1a88e00c343885A588b34b68B"
+      ],
+      "underlying": [],
+      "fee": 4000000
+    },
+    {
+      "name": "fxUSD-USDC-USDT",
+      "factory": "0xb17b674D9c5CB2e441F8e196a2f048A81355d031",
+      "address": "0xd0dd5d76cf0fc06dabc48632735566dca241a35e",
+      "tokens": ["0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F"],
+      "underlying": [
+        "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+        "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+      ],
+      "fee": 4000000
+    }
+  ],
+  "balancer": [
+    {
+      "address": "0x4f14D06CB1661cE1DC2A2f26A10A7Cd94393b29C",
+      "tokens": [
+        "0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F",
+        "0xDb298285FE4C5410B05390cA80e8Fbe9DE1F259B"
+      ],
+      "poolId": "0x4f14d06cb1661ce1dc2a2f26a10a7cd94393b29c000200000000000000000097"
+    }
+  ]
+}

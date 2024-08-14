@@ -1,0 +1,749 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Rebate",
+  "sourceName": "contract/Rebate.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NotSigner",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "previousAdmin",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "AdminChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beacon",
+          "type": "address"
+        }
+      ],
+      "name": "BeaconUpgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "version",
+          "type": "uint8"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        }
+      ],
+      "name": "ReferralSignatureValidatorUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "referrerId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "merkleRoot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "merkleLeaf",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "txHashes",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delta",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "claimable",
+              "type": "uint256"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct BalanceIncreasedEventParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "ReferrerBalanceIncreased",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        }
+      ],
+      "name": "ReferrerSignatureValidatorUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "referrerId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReferrerWithdrawal",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "signer",
+          "type": "address"
+        }
+      ],
+      "name": "SignerUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "referralKey",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "merkleRoot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "merkleLeaf",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "txHashes",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delta",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "claimable",
+              "type": "uint256"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct BalanceIncreasedEventParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "UserBalanceIncreased",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "referralKey",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "UserWithdrawal",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "MESSAGE_SCOPE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "referrerId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delta",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "txHashes",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "increaseReferrerBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "referrerId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delta",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "txHashes",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "withdrawSignature",
+          "type": "bytes"
+        }
+      ],
+      "name": "increaseReferrerBalanceAndWithdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "referralKey",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delta",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "txHashes",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "increaseUserBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "referralKey",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delta",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "txHashes",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "withdrawSignature",
+          "type": "bytes"
+        }
+      ],
+      "name": "increaseUserBalanceAndWithdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_signer",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxiableUUID",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum ReferralType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "name": "referralSignatureValidators",
+      "outputs": [
+        {
+          "internalType": "contract IRebateSignatureValidator",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "referrerBalances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "claimable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "merkleRoot",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "referrerSignatureValidator",
+      "outputs": [
+        {
+          "internalType": "contract IRebateSignatureValidator",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "referrerId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "referrerWithdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        },
+        {
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        }
+      ],
+      "name": "setReferralSignatureValidator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        }
+      ],
+      "name": "setReferrerSignatureValidator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_signer",
+          "type": "address"
+        }
+      ],
+      "name": "setSigner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "setToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "signer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "upgradeToAndCall",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum ReferralType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "name": "userBalances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "claimable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "merkleRoot",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "referralKey",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum ReferralType",
+          "name": "referralType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "userWithdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

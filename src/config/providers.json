@@ -1,0 +1,38 @@
+{
+  "arbitrum": [
+    {
+      "url": "https://arb-mainnet.g.alchemy.com/v2/99Hh6JHEUNRsykEEhz27LVVI-lFlaV1C",
+      "priority": 1
+    },
+    {
+      "url": "https://arbitrum.public-rpc.com",
+      "priority": 2
+    },
+    {
+      "url": "https://arb1.arbitrum.io/rpc",
+      "priority": 3
+    }
+  ],
+  "ethereum": [
+    {
+      "url": "https://eth-mainnet.g.alchemy.com/v2/bmhdlGHvpp6MG_k9aJ8JzsY4vs4w44w5",
+      "priority": 1
+    },
+    {
+      "url": "https://rpc.ankr.com/eth",
+      "priority": 2
+    }
+  ],
+  "polygon": [
+    {
+      "url": "https://rpc-mainnet.maticvigil.com",
+      "priority": 1
+    }
+  ],
+  "arbitrum-sepolia": [
+    {
+      "url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "priority": 1
+    }
+  ]
+}

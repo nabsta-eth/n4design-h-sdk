@@ -1,0 +1,408 @@
+{
+  "name": "handle fi token list",
+  "timestamp": "2022-05-18T01:09:39+0000",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "symbol": "FOREX",
+      "name": "handle.fi",
+      "address": "0xDb298285FE4C5410B05390cA80e8Fbe9DE1F259B",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/FOREXLogo.png"
+    },
+    {
+      "chainId": 1,
+      "symbol": "fxAUD",
+      "name": "handleAUD",
+      "address": "0x7E141940932E3D13bfa54B224cb4a16510519308",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxAUDLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 1,
+      "symbol": "fxEUR",
+      "name": "handleEUR",
+      "address": "0x116172B2482c5dC3E6f445C16Ac13367aC3FCd35",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxEURLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 1,
+      "symbol": "fxPHP",
+      "name": "handlePHP",
+      "address": "0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxPHPLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 1,
+      "symbol": "fxUSD",
+      "name": "handleUSD",
+      "address": "0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxUSDLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleCNY",
+      "symbol": "fxCNY",
+      "decimals": 18,
+      "address": "0x2C29daAce6Aa05e3b65743EFd61f8A2C448302a3",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCNYLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleKRW",
+      "symbol": "fxKRW",
+      "decimals": 18,
+      "address": "0xF4E8BA79d058fFf263Fd043Ef50e1010c1BdF991",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxKRWLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleCHF",
+      "symbol": "fxCHF",
+      "decimals": 18,
+      "address": "0x8C414cB8A9Af9F7B03673e93DF73c23C1aa05b4e",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCHFLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleCAD",
+      "symbol": "fxCAD",
+      "decimals": 18,
+      "address": "0x398B09b68AEC6C58e28aDe6147dAC2EcC6789737",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCADLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleGBP",
+      "symbol": "fxGBP",
+      "decimals": 18,
+      "address": "0x1AE27D9068DaDf10f611367332D162d184ed3414",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxGBPLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleJPY",
+      "symbol": "fxJPY",
+      "decimals": 18,
+      "address": "0x95e0e6230e9E965A4f12eDe5BA8238Aa04a85Bc6",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxJPYLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleSGD",
+      "symbol": "fxSGD",
+      "decimals": 18,
+      "address": "0x55a90F0eB223f3B2C0C0759F375734C48220decB",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxSGDLogo.png",
+      "chainId": 1,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 137,
+      "symbol": "FOREX",
+      "name": "handle.fi",
+      "address": "0xDb298285FE4C5410B05390cA80e8Fbe9DE1F259B",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/FOREXLogo.png"
+    },
+    {
+      "chainId": 137,
+      "symbol": "fxAUD",
+      "name": "handleAUD",
+      "address": "0x7E141940932E3D13bfa54B224cb4a16510519308",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxAUDLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 137,
+      "symbol": "fxEUR",
+      "name": "handleEUR",
+      "address": "0x116172B2482c5dC3E6f445C16Ac13367aC3FCd35",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxEURLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 137,
+      "symbol": "fxPHP",
+      "name": "handlePHP",
+      "address": "0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxPHPLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 137,
+      "symbol": "fxUSD",
+      "name": "handleUSD",
+      "address": "0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxUSDLogo.png",
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleCNY",
+      "symbol": "fxCNY",
+      "decimals": 18,
+      "address": "0x2C29daAce6Aa05e3b65743EFd61f8A2C448302a3",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCNYLogo.png",
+      "chainId": 137,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleKRW",
+      "symbol": "fxKRW",
+      "decimals": 18,
+      "address": "0xF4E8BA79d058fFf263Fd043Ef50e1010c1BdF991",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxKRWLogo.png",
+      "chainId": 137,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "name": "handleCHF",
+      "symbol": "fxCHF",
+      "decimals": 18,
+      "address": "0x8C414cB8A9Af9F7B03673e93DF73c23C1aa05b4e",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCHFLogo.png",
+      "chainId": 137,
+      "extensions": {
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "symbol": "FOREX",
+      "name": "handle.fi",
+      "address": "0xDb298285FE4C5410B05390cA80e8Fbe9DE1F259B",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/FOREXLogo.png"
+    },
+    {
+      "chainId": 42161,
+      "symbol": "wstETH",
+      "name": "Wrapped liquid staked Ether",
+      "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "decimals": 18,
+      "logoURI": "https://arbiscan.io/token/images/lido_32.png"
+    },
+    {
+      "chainId": 42161,
+      "symbol": "fxAUD",
+      "name": "handleAUD",
+      "address": "0x7E141940932E3D13bfa54B224cb4a16510519308",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxAUDLogo.png",
+      "extensions": {
+        "isHlpToken": true,
+        "isFxToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "symbol": "fxEUR",
+      "name": "handleEUR",
+      "address": "0x116172B2482c5dC3E6f445C16Ac13367aC3FCd35",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxEURLogo.png",
+      "extensions": {
+        "isHlpToken": true,
+        "isFxToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "symbol": "fxPHP",
+      "name": "handlePHP",
+      "address": "0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxPHPLogo.png",
+      "extensions": {
+        "isHlpToken": false,
+        "isFxToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "symbol": "fxUSD",
+      "name": "handleUSD",
+      "address": "0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxUSDLogo.png",
+      "extensions": {
+        "isHlpToken": true,
+        "isStable": true,
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 42161,
+      "name": "handleCNY",
+      "symbol": "fxCNY",
+      "address": "0x2C29daAce6Aa05e3b65743EFd61f8A2C448302a3",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCNYLogo.png",
+      "decimals": 18,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "handleKRW",
+      "symbol": "fxKRW",
+      "decimals": 18,
+      "address": "0xF4E8BA79d058fFf263Fd043Ef50e1010c1BdF991",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxKRWLogo.png",
+      "chainId": 42161,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "handleCHF",
+      "symbol": "fxCHF",
+      "decimals": 18,
+      "address": "0x8C414cB8A9Af9F7B03673e93DF73c23C1aa05b4e",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCHFLogo.png",
+      "chainId": 42161,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "handleCAD",
+      "symbol": "fxCAD",
+      "decimals": 18,
+      "address": "0x398B09b68AEC6C58e28aDe6147dAC2EcC6789737",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxCADLogo.png",
+      "chainId": 42161,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "handleGBP",
+      "symbol": "fxGBP",
+      "decimals": 18,
+      "address": "0x1AE27D9068DaDf10f611367332D162d184ed3414",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxGBPLogo.png",
+      "chainId": 42161,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "handleJPY",
+      "symbol": "fxJPY",
+      "decimals": 18,
+      "address": "0x95e0e6230e9E965A4f12eDe5BA8238Aa04a85Bc6",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxJPYLogo.png",
+      "chainId": 42161,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "handleSGD",
+      "symbol": "fxSGD",
+      "decimals": 18,
+      "address": "0x55a90F0eB223f3B2C0C0759F375734C48220decB",
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxSGDLogo.png",
+      "chainId": 42161,
+      "extensions": {
+        "isFxToken": true,
+        "isHlpToken": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
+      "decimals": 18,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "logoURI": "https://tokens.1inch.io/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png",
+      "chainId": 42161,
+      "extensions": {
+        "isHlpToken": true,
+        "isWrappedNative": true,
+        "isShortable": true
+      }
+    },
+    {
+      "name": "Handle Liquidity Pool",
+      "symbol": "hLP",
+      "decimals": 18,
+      "address": "0x2D57FB598c31Db8988A451eEbf1118b42C468E9B",
+      "logoURI": "https://app.handle.fi/assets/images/handle.fiLogoLightNewCut.png",
+      "chainId": 42161,
+      "extensions": {
+        "isLiquidityToken": true
+      }
+    }
+  ]
+}

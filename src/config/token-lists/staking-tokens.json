@@ -1,0 +1,88 @@
+{
+  "name": "handle fi staking",
+  "timestamp": "2022-05-18T01:09:39+0000",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "symbol": "WETH",
+      "name": "Wrapped Ether",
+      "address": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+      "decimals": 18,
+      "logoURI": "https://tokens.1inch.exchange/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png",
+      "chainId": 137
+    },
+    {
+      "symbol": "WMATIC",
+      "name": "Wrapped Matic",
+      "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+      "decimals": 18,
+      "logoURI": "https://tokens.1inch.exchange/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0.png",
+      "chainId": 137,
+      "extensions": {
+        "isWrappedNative": true
+      }
+    },
+    {
+      "symbol": "WBTC",
+      "name": "Wrapped BTC",
+      "decimals": 8,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
+      "chainId": 42161
+    },
+    {
+      "symbol": "EURS",
+      "name": "Stasis EURS",
+      "decimals": 2,
+      "address": "0xD22a58f79e9481D1a88e00c343885A588b34b68B",
+      "chainId": 42161,
+      "logoURI": "https://etherscan.io/token/images/statiseuro_28.png"
+    },
+    {
+      "symbol": "2CRV",
+      "name": "Curve.fi",
+      "decimals": 18,
+      "address": "0xbf7e49483881c76487b0989cd7d9a8239b20ca41",
+      "chainId": 42161
+    },
+    {
+      "symbol": "SP-WETH-FOREX",
+      "name": "SP-WETH-FOREX",
+      "decimals": 18,
+      "address": "0x9745e5CC0522827958eE3Fc2C03247276D359186",
+      "chainId": 42161
+    },
+    {
+      "symbol": "CRV-fxEUR-EURS",
+      "name": "CRV-fxEUR-EURS",
+      "decimals": 18,
+      "address": "0xb0D2EB3C2cA3c6916FAb8DCbf9d9c165649231AE",
+      "chainId": 42161
+    },
+    {
+      "symbol": "CRV-handle3",
+      "name": "CRV-handle3",
+      "decimals": 18,
+      "address": "0xd0dd5d76cf0fc06dabc48632735566dca241a35e",
+      "chainId": 42161
+    },
+    {
+      "symbol": "20fxUSD-80FOREX",
+      "name": "FOREX-fxUSD BPT",
+      "decimals": 18,
+      "address": "0x4f14D06CB1661cE1DC2A2f26A10A7Cd94393b29C",
+      "chainId": 42161
+    },
+    {
+      "symbol": "FRAXBP-f",
+      "name": "Curve.fi Factory Plain Pool: FRAXBP",
+      "decimals": 18,
+      "address": "0xC9B8a3FDECB9D5b218d02555a8Baf332E5B740d5",
+      "chainId": 42161
+    }
+  ]
+}
